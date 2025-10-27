@@ -1,0 +1,18 @@
+-------------------------------------------HALLAZGOS
+
+Ejercicio 1:
+
+-En la vista de detalle del producto no se encuentra ningún botón que permita volver al listado general de productos.
+-Al eliminar un artículo del carrito, la página se actualiza y, por unos segundos, desaparecen los demás productos agregados.
+-El sistema permite finalizar compras incluso cuando el carrito está vacío (cantidad 0).
+-Después de completar la compra, al presionar el botón “Cerrar”, la alerta de confirmación permanece activa.
+-Una vez concluida la compra, si se vuelve a hacer clic en el botón “Purchase”, el identificador de la compra continúa incrementándose.
+-El carrito no se vacía automáticamente luego de finalizar la compra, especialmente si se presiona la tecla ESC para cerrar la alerta.
+-El formulario de compra no incluye validaciones para restringir caracteres especiales en campos como nombre o número de tarjeta.
+-La información del cliente puede modificarse dentro del formulario mediante desplazamiento (scroll) o zoom, lo que refleja una falta de restricción en la interfaz.
+
+                                    CONCLUSIONES
+-El sistema no controla correctamente los productos añadidos al carrito; al agregar más unidades del mismo artículo, en lugar de actualizar la cantidad, se genera una nueva línea, afectando la claridad visual.
+-No existe un mecanismo que bloquee los campos del formulario una vez completada la compra, lo que permite editar información posterior al proceso.
+-La falta de validación en el formulario permite el ingreso de datos falsos o incompletos, y al no haber un control de compra finalizada, se pueden registrar duplicados.
+-El botón “Purchase” no se desactiva después de completar la transacción, lo que puede provocar múltiples compras no intencionadas.
