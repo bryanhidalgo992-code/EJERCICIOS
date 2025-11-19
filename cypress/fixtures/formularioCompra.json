@@ -8,5 +8,5 @@
     "btnCerrar":"#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-secondary",
     "btnComprar":"#orderModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary",
     "btnPlaceOrder": ".col-lg-1 > .btn",
-    "btnConfirmarCompra":".confirm"
+    "btnConfirmarCompra": "#orderModal .btn-primary"
 }
